@@ -1,0 +1,136 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARCHIVE HAUS</title>
+    <style>
+       * {
+            margin: 0; 
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Algerian', Arial, sans-serif;
+
+        }
+        header {
+            background-color: #C7607B;
+            color: pastel pink;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            width: 150px;
+            height: auto;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li {
+            position: relative;
+        }
+        nav ul li a {
+            color: pink;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px;
+            display: block;
+        }
+        nav ul li a:hover {
+            color: #f1c6c3;
+        }
+        .dropdown-content {
+            display:none;
+            position: absolute;
+            background-color: #f1c6c3;
+            min-width: 200px;
+            top: 100%;
+            left: 0;
+            border-radius: 1px solid pink;
+            border-radius: 4px;
+        }
+        .dropdown-content a {
+            padding: 12px 16px;
+            font-weight: normal;
+        }
+        .dropdown:hover .dropdown-content {
+            display:block
+        }
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0,6), rgba(0,0,0,0,6)), url(AH\ LOGO\ 1.jpg) center/cover no repeeat;
+            height: 70vh;
+            color:pink;
+            display: flex;
+            flex: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 15px;
+
+        }
+        footer {
+            background-color: #FF46A2;
+            color: pink;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+        
+        </a>
+
+        <nav>
+            <ul>
+            <li><a href="index.html">HOME</a></li>
+            <!--About dropdown-->
+            <li class="dropdown">
+                <a href="about.html">ABOUT</a>
+                <div class="dropdown-content">
+                    <a href="about.html">About Us</a>
+                    <a href="mission-vision.html">Mission & Vision</a>
+                </div>
+            </li>
+            <!--Products dropdown-->
+            <li class="dropdown">
+                <a href="products.html">PRODUCTS</a>
+                <div class="dropdown-content">
+                    <a href="bags.html">Bags</a>
+                    <a href="dresses.html">Dresses</a>
+                    <a href="pants.html">Pants</a>
+                    <a href="shoes.html">Shoes</a>
+                    <a href="accessories">Accessories</a>
+                </div>
+            </li>
+
+            <Li><a href="revies.html">REVIEWS</a></Li>
+            <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>WELCOME TO ARCHIVE HAUS</h1>
+        <p>One of a kind pieces at your fingertips</p>
+    </section>
+    <main style="padding: 50px; text-align: center;">
+        <h2>Featured Products</h2>
+        <p> </p>
+    </main>
+
+    <footer>
+        <p>2026 ARCHIVE HAUS. All rights reserved.</p>
+    </footer>
+</body>
+</html>
