@@ -2,69 +2,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-          * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Helvetica', Arial, sans-serif;
-         }
-         header {
-            background-color: #C7607B;
-            color: pastel pink;
-            padding: 15px 50px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-    }
-    .logo img {height: 35px; width: auto;}
-    nav ul {list-style: none; display: flex; gap: 20px;}
-    nav ul li {position: relative;}
-    nav ul li a {color: pink; text-decoration: none; font-weight: 500; padding: 10px; display: block;}
-    nav ul li {color: #C7607B;}
-    .dropdown-content {display: none; position: absolute; background-color: #C7607B; min-width: 200px; top: 100%; left: 0;}
-    .dropdown:hover .dropdown-content {display: block;}
-    .dropdown-content a {padding: 12px 16px; font-weight: normal;}
-
-    .contact-section {
-        padding: 80px 50px;
-        max-width: 900px;
-        margin: 0 auto;
-        text-align: center;
-    }
-    .contact-section h1 {
-        font-size: 42px;
-        margin-bottom: 20px;
-    }
-    .contact-section p {
-        font-size: 18px;
-        line-height: 1,8;
-        color: #C7607B;
-        margin-bottom: 30px 0;
-    }
-    .contact-img {
-        width: 100%;
-        max-width: 600px;
-        border-radius: 8px;
-        margin: 30px 0;
-    }
-    footer {
-        background-color: #C7607B;
-        color: pink;
-        text-align: center;
-        padding: 20px;
-        margin-top: 40px;
-    }
-    </style>
+    <title>CONTACT</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <a href="index.html" class="logo">
-            <img src="AH LOGO 2.jpg">
+            <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\AH LOGO 2.jpg">
         </a>
         <nav>
             <ul>
@@ -84,12 +28,12 @@
                     <a href="bags.html">Bags</a>
                     <a href="dresses.html">Dresses</a>
                     <a href="pants.html">Pants</a>
+                    <a href="tops.html">Tops</a>
                     <a href="shoes.html">Shoes</a>
-                    <a href="accessories">Accessories</a>
+                    <a href="accessories.html">Accessories</a>
                 </div>
             </li>
-
-            <Li><a href="reviews.html">REVIEWS</a></Li>
+            <li><a href="cart.html">CART (<span id="cart-count">0</span>)</a></li>
             <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
@@ -104,6 +48,6 @@
         <p>Physical Address: 22 Ascots Drive, Umhlanga, Durban, 4031, South Africa</p>
     </section>
     <footer>2026 ARCHIVE HAUS. All rights reserved.</footer>
-    
+    <script src="cart.js"></script>
 </body>
 </html>

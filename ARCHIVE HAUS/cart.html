@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cart - ARCHIVE HAUS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html">← Continue Shopping</a>
+  <a href="cart.html">CART (<span id="cart-count">0</span>)</a>
+</nav>
+
+<div class="cart-container">
+  <h1>Your Cart</h1>
+  <div id="cart-items"></div>
+  
+  <div class="cart-total">
+    <h2 id="cart-total-text">Total: R0</h2>
+    <button class="checkout-btn" onclick="checkout()">Checkout</button>
+  </div>
+</div>
+
+<script>
+let cart = JSON.parse(localStorage.getItem('myShopCart')) || [];
+let container = document.getElementById('cart-items');
+let totalText = document.getElementById('cart-total-text');
+let cartCount = document.getElementById('cart-count');
+
+function displayCart() {
+  let total = 0;
+  let html = "";
+
+  if(cart.length === 0) {
+    html = `<div class="empty-cart"><p>Your cart is empty 🛒</p><a href="index.html">Go Shopping</a></div>`;
+    totalText.innerText = "Total: R0";
+  } else {
+    cart.forEach((item, index) => {
+      total += item.price;
+      html += `
+        <div class="cart-item">
+          <div class="cart-item-details">
+            <h4>${item.name}</h4>
+            <p>${item.desc}</p>
+          </div>
+          <p class="cart-price">R${item.price}</p>
+          <button class="remove-btn" onclick="removeItem(${index})">Remove</button>
+        </div>
+      `;
+    });
+    totalText.innerText = "Total: R" + total;
+  }
+  
+  container.innerHTML = html;
+  if(cartCount) cartCount.innerText = cart.length;
+}
+
+function removeItem(index) {
+  cart.splice(index, 1);
+  localStorage.setItem('myShopCart', JSON.stringify(cart));
+  displayCart();
+}
+
+function checkout() {
+  if(cart.length === 0) {
+    alert("Your cart is empty!");
+    return;
+  }
+  alert("Thank you! Order placed successfully! Total: " + totalText.innerText);
+  
+  // CLEAR THE CART - This is what you asked for
+  localStorage.removeItem('myShopCart');
+  cart = [];
+  displayCart();
+}
+
+// Show cart when page loads
+displayCart();
+</script>
+
+</body>
+</html>

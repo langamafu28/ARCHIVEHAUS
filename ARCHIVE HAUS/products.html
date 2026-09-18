@@ -1,0 +1,623 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCTS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <a href="index.html" class="logo">
+        <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\AH LOGO 2.jpg">
+        </a>
+        <nav>
+            <ul>
+            <li><a href="index.html">HOME</a></li>
+            <!--About dropdown-->
+            <li class="dropdown">
+                <a href="about.html">ABOUT</a>
+                <div class="dropdown-content">
+                    <a href="about.html">About Us</a>
+                    <a href="mission-vision.html">Mission & Vision</a>
+                </div>
+            </li>
+            <!--Products dropdown-->
+            <li class="dropdown">
+                <a href="products.html">PRODUCTS</a>
+                <div class="dropdown-content">
+                    <a href="bags.html">Bags</a>
+                    <a href="dresses.html">Dresses</a>
+                    <a href="pants.html">Pants</a>
+                    <a href="tops.html">Tops</a>
+                    <a href="shoes.html">Shoes</a>
+                    <a href="accessories.html">Accessories</a>
+                </div>
+            </li>
+            <Li><a href="cart.html">CART (<span id="cart-count">0</span>)</a></Li>
+            <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="products-header">
+        <h1>Our Collections</h1>
+        <p>Editorial fashion curated for you</p>
+    </section>
+   
+    <!--Bags Section-->
+
+    <section class="category section" id="bags">
+        <h2>Bags</h2>
+        <div class="product-grid">
+
+            <!-- PRODUCT 1 -->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\BAG 1.jpg">
+                <h3>Roberto Cavalli 2000s Brown Leather & Animal Print Shoulder Bag</h3>
+                <p>R170</p>
+            <button onclick="addToCart('Roberto Cavalli 2000s Brown Leather & Animal Print Shoulder Bag', R170)">Add To Cart</button>
+            </div>
+            
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\BAG 2.jpg">
+                <h3>Louis Vuitton Monogram Denim Bag</h3>
+                <p>R280</p>
+                <button onclick="addToCart('Louis Vuitton Monogram Denim Bag', R280)">Add To Cart</button>
+             </div>
+
+            <!-- PRODUCT 3-->
+             <div class="product-card">
+             <img src ="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\Dior brown leather bag.jpg">
+             <h3>Dior Brown Leather Bag SS 2006</h3>
+             <p>R150</p>
+             <button onclick="addToCart('Dior Brown Leather Bag SS 2006', R150)">Add To Cart</button>
+             </div>
+
+             <!-- PRODUCT 4-->
+              <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\Miu Miu denim and brown leather bag 4.jpg">
+                <h3>MIU MIU Denim & Brown Leather Bag</h3>
+                <p>R119</p>
+                <button onclick="addToCart('MIU MIU Denim & Leather Bag', R119)"></button>
+              </div>
+
+              <!-- PRODUCT 5 -->
+               <div class="product-card">
+               <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\Miu Miu Brown leather bag 5.jpg">
+               <h3>MIU MIU Brown Leather Bag</h3>
+               <p>R320</p>
+               <button onclick="addToCart('MIU MIU Brown Leather Bag', R320)"></button>
+            </div>
+
+            <!-- PRODUCT 6 -->
+             <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\Army green leather bag 6.jpg">
+                <h3>Army Green Leather Bag</h3>
+                <p>R100</p>
+                <button onclick="addToCart('Army Green Leather Bag', R100)"></button>
+             </div>
+
+             <!-- PRODUCT 7 -->
+              <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\Viviene WestWood Pink leather bag 7.jpg">
+                <h3>Viviene Westwood Pink Leather Bag</h3>
+                <p>R160</p>
+                <button onclick="addToCart('Viviene Westwood Pink Leather Bag', R160)"></button>
+              </div>
+
+              <!-- PRODUCT 8 -->
+               <div class="product-card">
+            <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\Juicy Couture Brown Leather Bag 8.jpg">
+            <h3>Juicy Couture Brown Leather Bag</h3>
+            <p>R120</p>
+            <button onclick="addToCart('Juicy Couture Brown Leather Bag', R120)"></button>
+               </div>
+
+               <!-- PRODUCT 9 -->
+                <div class="product-card">
+                    <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\Juicy Couture Yellow Leather Bag 9.jpg">
+                    <h3>Juicy Couture Yellow Leather Bag</h3>
+                    <p>R120</p>
+                    <button onclick="addToCart('Juicy Couture Yellow Leather Bag', R120)"></button>
+                </div>
+
+                <!-- PRODUCT 10 -->
+                 <div class="product-card">
+                    <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\Viviene WrstWood Red Leather Bag 10.jpg">
+                    <h3>Viviene Westwood Red Leather Bag</h3>
+                    <p>R160</p>
+                    <button onclick="addToCart('Viviene Westwood Red Leather Bag',R160)"></button>
+                 </div>
+        </div>
+
+        
+    </section>
+
+    <!--Dresses Section-->
+    <section class="category section" id="dresses">
+        <h2>Dresses</h2>
+        <div class="product-grid">
+
+            <!-- PRODUCT 1 -->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\DRESS 1.jpg">
+                <h3>I AM GIA Aiden Platinum Bandage Mini Dress Pink Pearl XXS</h3>
+                <p> R200</p>
+                <p>Size: XXS</p>
+                <button onclick="addToCart('I AM GIA Platinum Bandage Dress Pink Pearl', R200, XXS)"></button>
+                
+            </div>
+
+            <!-- PRODUCT 2 -->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\DRESS 2.jpg">
+                <h3>Roberto Cavalli F/W 2000 Dress</h3>
+                <p>R150</p>
+                <p>Size: L</p>
+                <button onclick="addToCart('Roberto Cavalli F/W 2000 Dress', R150, L)"></button> 
+            </div>
+
+            <!-- PRODUCT 3 -->
+             <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\BROWN RUCHED HALTER MINI DRESS.jpg">
+                <h3>Brown Ruched Halter Mini Dress</h3>
+                <p>R250</p>
+                <P>Size: L</P>
+                <button onclick="addToCart('Brown Ruched Halter Mini Dress', R250, L)"></button>
+             </div>
+
+             <!-- PRODUCT 4 -->
+             <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\Black slouch dress 4.jpg">
+                <h3>Black Slouch Dress</h3>
+                <p>R230</p>
+                <p>Size: M</p>
+                <button onclick="addToCart('Black Slouched Dress', R230, M)"></button>
+             </div>
+
+             <!-- PRODUCT 5 -->
+             <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\denim dress 4.jpg">
+                <h3>Denim Dress</h3>
+                <p>R150</p>
+                <P>Size: L</P>
+                <button onclick="addToCart('Denim Dress', R150, L)"></button>
+             </div>
+
+             <!-- PRODUCT 6 -->
+             <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\Mustard slouch dress 5.jpg">
+                <h3>Mustard Slouch Dress</h3>
+                <p>R170</p>
+                <P>Size: xL</P>
+                <button onclick="addToCart('Mustard Slouch Dress', R170, xL)"></button>
+             </div>
+
+             <!-- PRODUCT 7 -->
+             <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\Pink strapless slouch dress 7.jpg">
+                <h3>Pink Strapless Slouch Dress</h3>
+                <p>R200</p>
+                <P>Size: S</P>
+                <button onclick="addToCart('Pink Strapless Slouch Dress', R2O0, S)"></button>
+             </div>
+
+             <!-- PRODUCT 8 -->
+             <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\Blue tube dress 8.jpg">
+                <h3>Blue Tube Dress</h3>
+                <p>R180</p>
+                <P>Size: XS</P>
+                <button onclick="addToCart('Blue Tube Dress', R170, xs)"></button>
+             </div>
+
+             <!-- PRODUCT 9 -->
+             <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\Tan Halter dress.jpg">
+                <h3>Tan Halter Dress</h3>
+                <p>R300</p>
+                <P>Size: M</P>
+                <button onclick="addToCart('Tan Halter Dress', R300, M)"></button>
+             </div>
+
+             <!-- PRODUCT 10 -->
+             <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\Vintage Polka dot slip dress 10.jpg">
+                <h3>Vintage Polka Dot Slip Dress</h3>
+                <p>R250</p>
+                <P>Size: M</P>
+                <button onclick="addToCart('Vintage Polka Dot Slip Dress', R250, M)"></button>
+             </div>
+        </div>
+    </section>
+
+    <!--Shoes Section-->
+    <section class="category section" id="shoes">
+        <h2>Shoes</h2>
+        <div class="product-grid">
+
+            <!-- PRODUCT 1-->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\SHOES 1.jpg">
+                <h3>Jimmy Choo Vintage Denim Heels</h3>
+                <p>R100</p>
+                <p>Size:6</p>
+                <button onclick="addToCart('Jimmy Choo Vintage Heels', R100, 6)"></button>
+                </div>
+
+            <!--PRODUCT 2-->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\SHOES 2.jpg">
+                <h3>Christian Dior Vintage Heels</h3>
+                <p>R100</p>
+                <p>Size:7</p>
+                <button onclick="addToCart('Christian Dior Vintage Heels', R100, 7)"></button>
+                </div>
+
+            <!-- PRODUCT 3-->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\Green mules 3.jpg">
+                <h3>Green Mules</h3>
+                <p>R150</p>
+                <p>Size: 8</p>
+                <button onclick="addToCart('Green Mules', R150, 8)"></button>
+                 </div>
+
+                 <!-- PRODUCT 4 -->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\White heels 4.jpg">
+                <h3>White Heels</h3>
+                <p>R190</p>
+                <p>Size: 9</p>
+                <button onclick="addToCart('White Heels', R190, 9)"></button>
+                 </div>
+
+                  <!-- PRODUCT 5-->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\Jewel rhinestone mules 5.jpg">
+                <h3>Jewel Rhinestone Mules</h3>
+                <p>R210</p>
+                <p>Size: 7</p>
+                <button onclick="addToCart('Jewel Rhinestone Heels', R210, 7)"></button>
+                 </div>
+
+                  <!-- PRODUCT 6 -->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\pink mules.jpg">
+                <h3>Pink Mules</h3>
+                <p>R180</p>
+                <p>Size: 8</p>
+                <button onclick="addToCart('Pink Mules', R180, 8)"></button>
+                
+                 </div>
+
+                  <!-- PRODUCT 7 -->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\brown sheer wedge heels 7.jpg">
+                <h3>Brown Sheer Wedge Heels</h3>
+                <p>R90</p>
+                <p>Size: 6</p>
+                <button onclick="addToCart('Brown Sheer Wedge Heels', R90, 6)"></button>
+                
+                 </div>
+
+                  <!-- PRODUCT 8 -->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\Yellow open toe boots.jpg">
+                <h3>Yellow Open Toe Boots</h3>
+                <p>R290</p>
+                <p>Size: 8</p>
+                <button onclick="addToCart()"></button>
+                
+                 </div>
+
+                  <!-- PRODUCT 9 -->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\pink cowboy boots 10.jpg">
+                <h3>Pink Cowboy Boots</h3>
+                <p>R250</p>
+                <p>Size: 9</p>
+                <button onclick="addToCart()"></button>
+                
+                 </div>
+
+                  <!-- PRODUCT 10 -->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\orange orchid heels 6.jpg">
+                <h3>Orange Orchid Heels</h3>
+                <p>R140</p>
+                <p>Size: 6</p>
+                <button onclick="addToCart('Orange Orchid Heels', R140, 6)"></button>
+             </div>
+        </div>
+    </section>
+
+    <!--Tops Section-->
+    <section class="category section" id="tops">
+        <h2>Tops</h2>
+        <div class="product-grid">
+
+            <!--PRODUCT 1-->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\TOP 1.jpg">
+                <h3>House of CB Natalaya Bow Halter Lace Top</h3>
+                <p>R70</p>
+                <p>Size: M</p>
+                <button onclick="addToCart('House of CB Natalaya Bow Hlater Lace Top', R70, M)"></button>
+                </div>
+
+                <!--PRODUCT 2-->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\TOP 2.jpg">
+                <h3>Sheer Leopard Print Top</h3>
+                <p>R85</p>
+                <p>Size: S</p>
+                <button onclick="addToCart('Leopard Print Top', R85, S)"></button>
+               </div>
+
+             <!-- PRODUCT 3-->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\blue sequin top 3.jpg">
+                <h3>Blue Sequin Top </h3>
+                <p>R70</p>
+                <p>Size: L</p>
+                <button onclick="addToCart('Blue Sequin Top', R70, L)"></button>
+                 </div>
+
+                  <!-- PRODUCT 4-->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\halter multicolor stripe top 4.jpg">
+                <h3>Halter Multicolor Stripe Top</h3>
+                <p>R95</p>
+                <p>Size: XS</p>
+                <button onclick="addToCart('Halter Multicolor Stripe Top', R95, XS)"></button>
+                 </div>
+
+                  <!-- PRODUCT 5-->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\white halter top 5.jpg">
+                <h3>White Halter Top</h3>
+                <p>R60</p>
+                <p>Size: M</p>
+                <button onclick="addToCart('White Halter Top', R60, M)"></button>
+                 </div>
+
+                  <!-- PRODUCT 6-->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\orange sequin tank top 6.jpg">
+                <h3>Orange Sequin Tank Top</h3>
+                <p>R100</p>
+                <p>Size: XL</p>
+                <button onclick="addToCart('Orange Sequin Top', R100, XL)"></button>
+                 </div>
+
+                  <!-- PRODUCT 7-->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\light pink halter top.jpg">
+                <h3>Light Pink Hakter Top</h3>
+                <p>R75</p>
+                <p>Size: M</p>
+                <button onclick="addToCart('Light Pink Halter Top', R75, M )"></button>
+                 </div>
+
+                  <!-- PRODUCT 8-->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\off shoulder light pink top 8.jpg">
+                <h3>Light Pink Off-Shoulder Top</h3>
+                <p>R95</p>
+                <p>Size: L</p>
+                <button onclick="addToCart('Light Pink Off-Shoulder Top', R95, L)"></button>
+                 </div>
+
+                  <!-- PRODUCT 9-->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\red tank top 9.jpg">
+                <h3>Red Tank Top</h3>
+                <p>R85</p>
+                <p>Size: S</p>
+                <button onclick="addToCart('Red Tank Top', R85, S)"></button>
+                 </div>
+
+                  <!-- PRODUCT 10-->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\red halter assymetrical top 10.jpg">
+                <h3>Red Halter Asymmetrical Top</h3>
+                <p>R90</p>
+                <p>Size: L</p>
+                <button onclick="addToCart('Red Halter Asymmetrical Top', R90, L)"></button>
+                 </div>
+        </div>
+    </section>
+
+    <!--Pants Section-->
+    <section class="category section" id="pants">
+        <h2>Pants</h2>
+        <div class="product-grid">
+
+            <!--PRODUCT 1-->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\Pants 1.jpg">
+                <h3>Black Capri Pants</h3>
+                <p>R90</p>
+                <p>Size: L</p>
+                <button onclick="addToCart('Black Capri Pants', R90, L)"></button>
+               
+            </div>
+
+            <!--PRODUCT 2-->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\Pants 2.jpg">
+                <h3>Denim Capri Pants</h3>
+                <p>R75</p>
+                <p>Size: M</p>
+                <button onclick="addToCart('Denim Capri Pants', R75, M)"></button>
+                </div>
+
+                 <!-- PRODUCT 3-->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\PANTS 3.jpg">
+                <h3>Black Lace Pants</h3>
+                <p>R190</p>
+                <p>Size: XL</p>
+                <button onclick="addToCart('Black Lace Pants', R190, XL)"></button>
+                 </div>
+
+                  <!-- PRODUCT 4-->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\PANTS 4.jpg">
+                <h3>White Boho Lace Pants</h3>
+                <p>R150</p>
+                <p>Size: L</p>
+                <button onclick="addToCart('White Boho Lace Pants', R150, L)"></button>
+                 </div>
+
+                  <!-- PRODUCT 5-->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\PANTS 5.jpg">
+                <h3>Blue Puddle Pants</h3>
+                <p>R120</p>
+                <p>Size: M</p>
+                <button onclick="addToCart('Blue Puddle Pants', R120, M)"></button>
+                 </div>
+
+                  <!-- PRODUCT 6-->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\PANTS 6.jpg">
+                <h3>Pink Lowrise Lounge Pants</h3>
+                <p>R110</p>
+                <p>Size: M</p>
+                <button onclick="addToCart('Pink Lowrise Lounge Pants', R110, M)"></button>
+                 </div>
+
+                  <!-- PRODUCT 7-->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\PANTS 7.jpg">
+                <h3>Brown Lounge Pants</h3>
+                <p>R100</p>
+                <p>Size: S</p>
+                <button onclick="addToCart('Brown Lounge Pants', R100, S)"></button>
+                 </div>
+
+                  <!-- PRODUCT 8-->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\PANTS 8.jpg">
+                <h3>Yellow Graphic Sweatpants</h3>
+                <p>R200</p>
+                <p>Size: XL</p>
+                <button onclick="addToCart('Yellow Graphic Pants,', R200, XL)"></button>
+                 </div>
+
+                  <!-- PRODUCT 9-->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\PANTS 9.jpg">
+                <h3>Denim Jorts</h3>
+                <p>R210</p>
+                <p>Size: L</p>
+                <button onclick="addToCart('Denim Jorts', R210, L)"></button>
+                 </div>
+
+                  <!-- PRODUCT 10-->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\PANTS 10.jpg">
+                <h3>Darkwas Denim Microshorts</h3>
+                <p>R75</p>
+                <p>Size: S</p>
+                <button onclick="addToCart('Darkwash Denim Microshorts', R75, S)"></button>
+                 </div>
+        </div>
+    </section>
+
+    <!--Accessories Section-->
+    <section class="category section" id="accessories">
+        <h2>Accessories</h2>
+        <div class="product-grid">
+
+            <!--PRODUCT 1-->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\Accesory 1.jpg">
+                <h3>2000s Butterfly Wrap around glasses</h3>
+                <p>R70</p>
+                <button onclick="addToCart('Butterfly Wrap Around Glasses', R70)"></button>
+                </div>
+
+                <!--PRODUCT 2-->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\Accessory 2.jpg">
+                <h3>Zebra Print Head Wrap</h3>
+                <p>R50</p>
+                <button onclick="addToCart('Zebra Print Headwrap', R50)"></button>
+                </div>
+
+                <!-- PRODUCT 3-->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\earrings 1.jpg">
+                <h3>Gold Flower Earrings</h3>
+                <p>R50</p>
+                <button onclick="addToCart('Gold Flower Earrings', R50)"></button>
+                 </div>
+
+                  <!-- PRODUCT 4-->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\earrings 2.jpg">
+                <h3>Gold Teardrop Earrings</h3>
+                <p>R45</p>
+                <button onclick="addToCart('Gold TearDrop Earrings', R45)"></button>
+                 </div>
+
+                  <!-- PRODUCT 5-->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\satin scarf.jpg">
+                <h3>Brown Satin Scarf</h3>
+                <p>R30</p>
+                <button onclick="addToCart('Brown Satin Scarf', R30)"></button>
+                 </div>
+
+                  <!-- PRODUCT 6-->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\Sunglasses.jpg">
+                <h3>Khakhi Sunglasses</h3>
+                <p>R25</p>
+                <button onclick="addToCart('Khakhi Sunglasses', R25)"></button>
+                 </div>
+
+                  <!-- PRODUCT 7-->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\brown suede concho belt.jpg">
+                <h3>Brown Suede Concho Belt</h3>
+                <p>R40</p>
+                <button onclick="addToCart('Brown Suede Concho Belt', R40)"></button>
+                 </div>
+
+                  <!-- PRODUCT 8-->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\watch 1.jpg">
+                <h3>Gold Snake Body Watch</h3>
+                <p>R90</p>
+                <button onclick="addToCart('Gold Snake Body Watch', R90)"></button>
+                 </div>
+
+                 <!-- PRODUCT 9-->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\van cleef bracelet.jpg">
+                <h3>Gold Van Cleef Bracelet</h3>
+                <p>R200</p>
+                <button onclick="addToCart('Gold Vna Cleef Bracelet', R200)"></button>
+                 </div>
+
+                  <!-- PRODUCT 10-->
+            <div class="product-card">
+                <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\watch 2.jpg">
+                <h3>Burgundy & Gold Watch</h3>
+                <p>R110</p>
+                <button onclick="addToCart('Burgundy & Gold Watch', R110)"></button>
+                 </div>
+        </div>
+    </section>
+    <footer>
+        <p>2026 ARCHIVE HAUS. All rights reserved.</p>
+    </footer>
+    <script src="cart.js"></script>
+</body>
+</html>

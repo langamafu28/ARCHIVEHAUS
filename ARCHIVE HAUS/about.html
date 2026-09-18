@@ -2,70 +2,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=*, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Helvetica', Arial, sans-serif;
-
-    }
-    header {
-            background-color: #C7607B;
-            color: pastel pink;
-            padding: 15px 50px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-    }
-    .logo img {height: 35px; width: auto;}
-    nav ul {list-style: none; display: flex; gap: 20px;}
-    nav ul li {position: relative;}
-    nav ul li a {color: pink; text-decoration: none; font-weight: 500; padding: 10px; display: block;}
-    nav ul li {color: #C7607B;}
-    .dropdown-content {display: none; position: absolute; background-color: #C7607B; min-width: 200px; top: 100%; left: 0;}
-    .dropdown:hover .dropdown-content {display: block;}
-    .dropdown-content a {padding: 12px 16px; font-weight: normal;}
-
-    .about-section {
-        padding: 80px 50px;
-        max-width: 900px;
-        margin: 0 auto;
-        text-align: center;
-    }
-    .about-section h1 {
-        font-size: 42px;
-        margin-bottom: 20px;
-    }
-    .about-section p {
-        font-size: 18px;
-        line-height: 1,8;
-        color: #C7607B;
-        margin-bottom: 30px 0;
-    }
-    .about-img {
-        width: 100%;
-        max-width: 600px;
-        border-radius: 8px;
-        margin: 30px 0;
-    }
-    footer {
-        background-color: #C7607B;
-        color: pink;
-        text-align: center;
-        padding: 20px;
-        margin-top: 40px;
-    }
-    </style>
+    <title>ABOUT </title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <a href="index.html" class="logo">
-            <img src="AH LOGO 2.jpg">
+            <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\AH LOGO 2.jpg">
         </a>
         <nav>
             <ul>
@@ -85,12 +28,12 @@
                     <a href="bags.html">Bags</a>
                     <a href="dresses.html">Dresses</a>
                     <a href="pants.html">Pants</a>
+                    <a href="tops.html">Tops</a>
                     <a href="shoes.html">Shoes</a>
-                    <a href="accessories">Accessories</a>
+                    <a href="accessories.html">Accessories</a>
                 </div>
             </li>
-
-            <Li><a href="reviews.html">REVIEWS</a></Li>
+            <li><a href ="cart.html">CART (<span id="cart-count">0</span>)</a></li>
             <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
@@ -98,16 +41,16 @@
 
     <section class="about-section">
         <h1>ABOUT US</h1>
-        <img src="AH LOGO 2.jpg">
-        <p>Welcome to ARCHIVE HAUS.</p>
-        <p>Where one of one pieces are just a tap away.</p>
-        <p>Archive Haus is a South African online thrift shop.</p>
-        <p>It was founded by award–winning stylist Langa Mafu in 2021. Archive Haus was created with the intention of giving vintage designer pieces a brand-new life whilst catering to the hearts of people who love vintage designer pieces at affordable prices.</p>
-        <p> Archive Haus has partnered up with some of the biggest fashion houses like - Louis Vuitton, Chanel, Gucci, Miu Miu, Jacqueemus and many more - to give shoppers a variety of designer pieces to choose from. </p>
-        <p>Thank you for being apart of our journey. This is more than clothing. Its about sustainability and conscious consumption</p>
+        <h2>Welcome to ARCHIVE HAUS.</h2>
+        <h3>Where one of one pieces are just a tap away.</p>
+        <h3>Archive Haus is a South African online thrift shop.</h3>
+        <h3>It was founded by award–winning stylist Langa Mafu in 2021. Archive Haus was created with the intention of giving vintage designer pieces a brand-new life whilst catering to the hearts of people who love vintage designer pieces at affordable prices.</h3>
+        <h3> Archive Haus has partnered up with some of the biggest fashion houses like - Louis Vuitton, Chanel, Gucci, Miu Miu, Jacqueemus and many more - to give shoppers a variety of designer pieces to choose from. </h3>
+        <h3>Thank you for being apart of our journey. This is more than clothing. Its about sustainability and conscious consumption</h3>
     </section>
     <footer>
         <p>2026 ARCHIVE HAUS. All rights reserved.</p>
     </footer>
+    <script src="cart.js"></script>
 </body>
 </html>
