@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cart - ARCHIVE HAUS</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<header>
+<a href="index.html" class="logo">
+            <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\AH LOGO.jpg">
+        </a>
+        <nav>
+            <ul>
+            <li><a href="index.html">HOME</a></li>
+            <!--About dropdown-->
+            <li class="dropdown">
+                <a href="about.html#about">ABOUT</a>
+                <div class="dropdown-content">
+                    <a href="about.html#about">About Us</a>
+                    <a href="about.html#mission-vision">Mission & Vision</a>
+                </div>
+            </li>
+             <li><a href="products.html">PRODUCTS</a></li>
+            <Li><a href="cart.html">CART (<span id="cart-count">0</span>)</a></Li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="enquiry.html">ENQUIRY</a></li>
+            </ul>
+        </nav>
+</header>
+
+<div class="cart-container">
+  <h1>Your Cart</h1>
+  <div id="cart-items"></div>
+  
+  <div class="cart-total">
+    <h2 id="cart-total-text">Total: R0</h2>
+    <button class="checkout-btn" onclick="checkout()">Checkout</button>
+  </div>
+</div>
+
+<script>
+let cart = JSON.parse(localStorage.getItem('myShopCart')) || [];
+let container = document.getElementById('cart-items');
+let totalText = document.getElementById('cart-total-text');
+let cartCount = document.getElementById('cart-count');
+
+function displayCart() {
+  let total = 0;
+  let html = "";
+
+  if(cart.length === 0) {
+    html = `<div class="empty-cart"><p>Your cart is empty 🛒</p><a href="index.html">Go Shopping</a></div>`;
+    totalText.innerText = "Total: R0";
+  } else {
+    cart.forEach((item, index) => {
+      const qty = item.qty || 1;
+      total += (item.price || 0) * qty;
+      html += `
+        <div class="cart-item">
+          <div class="cart-item-details">
+            <h4>${item.name}</h4>
+            <p>${item.size || item.desc || 'No size'} x ${qty}</p>
+          </div>
+          <p class="cart-price">R${(item.price || 0) * qty}</p>
+          <button class="remove-btn" onclick="removeItem(${index})">Remove</button>
+        </div>
+      `;
+    });
+    totalText.innerText = "Total: R" + total;
+  }
+  
+  container.innerHTML = html;
+  if(cartCount) cartCount.innerText = cart.reduce((sum, item) => sum + (item.qty || 1), 0);
+}
+
+function removeItem(index) {
+  cart.splice(index, 1);
+  localStorage.setItem('myShopCart', JSON.stringify(cart));
+  displayCart();
+}
+
+function checkout() {
+  if(cart.length === 0) {
+    alert("Your cart is empty!");
+    return;
+  }
+  alert("Thank you! Order placed successfully! Total: " + totalText.innerText);
+  
+  // CLEAR THE CART - This is what you asked for
+  localStorage.removeItem('myShopCart');
+  cart = [];
+  displayCart();
+}
+
+// Show cart when page loads
+displayCart();
+</script>
+
+<footer>
+  <p>&copy; 2026 Archive Haus. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

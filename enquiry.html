@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enquiry - Contact Us</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header>
+  <a href="index.html" class="logo">
+            <img src="C:\Users\Student\Documents\ARCHIVE HAUS\AH IMAGES\AH LOGO.jpg">
+        </a>
+        <nav>
+            <ul>
+            <li><a href="index.html">HOME</a></li>
+            <!--About dropdown-->
+            <li class="dropdown">
+                <a href="about.html#about">ABOUT</a>
+                <div class="dropdown-content">
+                    <a href="about.html#about">About Us</a>
+                    <a href="about.html#mission-vision">Mission & Vision</a>
+                </div>
+            </li>
+             <li><a href="products.html">PRODUCTS</a></li>
+            <Li><a href="cart.html">CART (<span id="cart-count">0</span>)</a></Li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="enquiry.html">ENQUIRY</a></li>
+            </ul>
+        </nav>
+  </header>
+
+<div class="container">
+  <h1>Enquiry Form</h1>
+  <p class="sub">Have a question about our bags? Send us a message!</p>
+
+  <form id="enquiryForm">
+    <label>Full Name</label>
+    <input type="text" name="name" placeholder="Your full name" required>
+
+    <label>Email Address</label>
+    <input type="email" name="email" placeholder="your@email.com" required>
+
+    <label>Phone Number</label>
+    <input type="tel" name="phone" placeholder="e.g. 073 123 4567">
+
+    <label>Enquiry Type</label>
+    <select name="subject" required>
+      <option value="">-- Select --</option>
+      <option value="Product Enquiry">Product Enquiry</option>
+      <option value="Order Status">Order Status</option>
+      <option value="Delivery">Delivery</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <label>Your Message</label>
+    <textarea name="message" placeholder="Type your enquiry here..." required></textarea>
+
+    <button type="submit">Send Enquiry</button>
+    <div class="success" id="successMsg">Thank you! Your enquiry has been sent. We will contact you soon.</div>
+  </form>
+</div>
+
+<script>
+document.getElementById('enquiryForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  document.getElementById('successMsg').style.display = 'block';
+  this.reset();
+  // To actually send emails, connect this to Formspree or EmailJS later
+});
+</script>
+
+<footer>
+  <p>&copy; 2026 Archive Haus. All Rights Reserved.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
